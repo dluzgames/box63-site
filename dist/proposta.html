@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Demonstração Exclusiva — BOX 63 Distribuidora & Tabacaria ®</title>
+<style>
+  :root {
+    --bg: #09090b;
+    --surface: #121217;
+    --ink: #f4f4f5;
+    --muted: #a1a1aa;
+    --acc: #8b5cf6;
+    --acc-green: #10b981;
+    --line: #27272a;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .stage { width: min(1200px, 96vw); margin: 0 auto; }
+  header { padding: 48px 0 28px; text-align: center; }
+  .kicker {
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--acc);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--ink);
+  }
+  h1 em { font-style: normal; color: var(--acc); }
+  .sub {
+    color: var(--muted);
+    max-width: 620px;
+    margin: 14px auto 0;
+    font-size: 16px;
+  }
+  .autor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .autor b { color: #fff; }
+  .frame {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px -15px rgba(0,0,0,.6);
+  }
+  .bar {
+    padding: 12px 18px;
+    background: #18181b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .dots { display: flex; gap: 6px; }
+  .dots i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .dots i:nth-child(1) { background: #EF4444; }
+  .dots i:nth-child(2) { background: #F59E0B; }
+  .dots i:nth-child(3) { background: #10B981; }
+  .address-bar {
+    flex: 1;
+    background: #09090b;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-family: monospace;
+    font-size: 12px;
+  }
+  iframe {
+    width: 100%;
+    height: 780px;
+    border: 0;
+    display: block;
+    background: #09090b;
+  }
+  .grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 36px 0;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .card h3 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .cta-box {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(9, 9, 11, 0.9));
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin: 40px 0 60px;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #10B981;
+    color: #fff;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+    margin-top: 18px;
+    transition: transform .2s, background .2s;
+  }
+  .cta-btn:hover {
+    background: #059669;
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="kicker">Demonstração Estratégica • Proposta Comercial</div>
+  <h1>Projeto Web Oficial — <em>BOX 63 Distribuidora & Tabacaria ®</em></h1>
+  <p class="sub">
+    Criado sob medida com identidade noturna de alta performance (Estilo Dark / Linear), montador interativo de combos para WhatsApp e vitrine completa de produtos da Loja Oeste.
+  </p>
+  <div class="autor">
+    <span>Apresentado por <b>Duilio Luz</b></span>
+    <span>•</span>
+    <span><b>DLuz Digital</b> — Empresa de Marketing Digital em Paraíso do Tocantins</span>
+  </div>
+</header>
+
+<div class="stage">
+  <div class="frame">
+    <div class="bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div class="address-bar">https://box63.dluz.com.br — Visualização Interativa do Site</div>
+      <a href="index.html" target="_blank" style="color: var(--acc); text-decoration: none; font-weight: 600;">Abrir em nova aba ↗</a>
+    </div>
+    <iframe src="index.html" title="Prévia do Site Box 63"></iframe>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="grid-info">
+    <div class="card">
+      <h3>🚀 1. Montador de Combos Direto no WhatsApp</h3>
+      <p>O cliente seleciona destilado (Whisky, Gin, Vodka), refrigerante/energético e gelo saborizado na hora. O botão gera a mensagem pronta no WhatsApp da loja, agilizando as vendas na madrugada.</p>
+    </div>
+    <div class="card">
+      <h3>📱 2. 100% Responsivo no Celular</h3>
+      <p>90% das buscas por bebidas e tabacaria acontecem pelo smartphone. O site foi projetado para carregar instantaneamente no 4G/5G, com botões de chamada rápida.</p>
+    </div>
+    <div class="card">
+      <h3>🎯 3. Posicionamento no Google em Paraíso</h3>
+      <p>Estruturado com SEO local no Setor Oeste, colocando a Box 63 no topo das pesquisas por "distribuidora em Paraíso", "tabacaria aberta agora" e "cerveja gelada delivery".</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2 style="font-size: 24px; color: #fff; margin-bottom: 8px;">Gostou da Demonstração, Daniel?</h2>
+    <p style="color: var(--muted); max-width: 550px; margin: 0 auto; font-size: 15px;">
+      Podemos colocar esse site no ar no domínio oficial de vocês hoje mesmo, além de alinhar campanhas de tráfego pago e redes sociais. Sem burocracia e com suporte local de quem mora aqui em Paraíso!
+    </p>
+    <a href="https://api.whatsapp.com/send?phone=556399432564&text=Opa%20Duilio%2C%20vi%20a%20demonstra%C3%A7%C3%A3o%20do%20site%20da%20Box%2063%21%20Vamos%20conversar." class="cta-btn">
+      Falar com Duilio Luz no WhatsApp (DLuz Digital) 💬
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

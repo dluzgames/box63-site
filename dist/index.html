@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOX 63 Distribuidora & Tabacaria ® | Paraíso do Tocantins</title>
+  <meta name="description" content="A conveniência e tabacaria mais completa de Paraíso do Tocantins. Cervejas trincando, combos de whisky e gin, essências, tereré e gelo. Aberto até de madrugada no Setor Oeste.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BOX 63 Distribuidora & Tabacaria ® — Loja Oeste 2059">
+  <meta property="og:description" content="Variedades em Bebidas, Combos, Tabacaria, Head Shop, Tereré e Gelo em Paraíso do Tocantins. Peça pelo WhatsApp ou visite a Loja Oeste!">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              raw: '#09090b',
+              surface: '#121217',
+              border: '#27272a',
+              neon: '#06b6d4',
+              amber: '#f59e0b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      background-color: #09090b;
+      color: #fafafa;
+      overflow-x: hidden;
+    }
+
+    .glow-purple {
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(9, 9, 11, 0) 70%);
+    }
+
+    .glow-cyan {
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, rgba(9, 9, 11, 0) 70%);
+    }
+
+    .card-glass {
+      background: rgba(18, 18, 23, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card-glass:hover {
+      border-color: rgba(139, 92, 246, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.2);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-purple {
+      background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .badge-pulse {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+  </style>
+</head>
+<body class="selection:bg-purple-500/30 selection:text-purple-200">
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="fixed top-0 left-1/4 w-[600px] h-[500px] glow-purple pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-0 w-[500px] h-[500px] glow-cyan pointer-events-none -z-10"></div>
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#09090b]/80 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.jpg" alt="BOX 63 Logo" class="w-10 h-10 rounded-full border border-purple-500/40 object-cover shadow-lg">
+        <div>
+          <span class="font-bold text-lg tracking-wider text-white flex items-center gap-1.5">
+            BOX 63 <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded border border-purple-500/30">DISTRIBUIDORA</span>
+          </span>
+          <span class="text-[11px] text-zinc-400 block -mt-1">Loja Oeste 2059 • Paraíso do Tocantins</span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-300">
+        <a href="#categorias" class="hover:text-purple-400 transition-colors">Categorias</a>
+        <a href="#combos" class="hover:text-purple-400 transition-colors">Montador de Combo</a>
+        <a href="#feed" class="hover:text-purple-400 transition-colors">Instagram</a>
+        <a href="#localizacao" class="hover:text-purple-400 transition-colors">Localização & Horários</a>
+      </nav>
+
+      <!-- Action Button -->
+      <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Opa%2C%20vi%20o%20site%20da%20Box%2063%20e%20gostaria%20de%20fazer%20um%20pedido%21" target="_blank" class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-lg shadow-lg shadow-purple-500/25 transition-all">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>WhatsApp (63) 99993-8652</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section (Linear/Vercel Style) -->
+  <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto">
+    <div class="flex flex-col items-center text-center">
+      
+      <!-- Live Status Badge -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 mb-8 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 badge-pulse"></span>
+        <span class="font-medium text-emerald-400">Atendimento Noturno até as 02:00h</span>
+        <span class="text-zinc-600">•</span>
+        <span class="text-zinc-400">Setor Oeste</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl text-gradient leading-tight mb-6">
+        A Conveniência & Tabacaria <br class="hidden sm:inline"/>
+        <span class="text-gradient-purple">Mais Completa</span> de Paraíso.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-zinc-400 text-base md:text-lg max-w-2xl leading-relaxed mb-10">
+        Cerveja trincando no grau zero, combos selecionados de Whisky & Gin, essências de narguilé, pods, tereré e gelo. Retire no balcão ou peça pelo delivery rápido no WhatsApp.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Opa%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Box%2063%21" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-500 text-white font-semibold px-8 py-3.5 rounded-xl shadow-xl shadow-purple-600/30 transition-all text-base group">
+          <i data-lucide="zap" class="w-5 h-5 text-purple-200 group-hover:scale-110 transition-transform"></i>
+          <span>Pedir no WhatsApp Agora</span>
+        </a>
+        <a href="#combos" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700/80 text-zinc-200 font-medium px-8 py-3.5 rounded-xl transition-all text-base">
+          <i data-lucide="layers" class="w-5 h-5 text-zinc-400"></i>
+          <span>Montar Meu Combo</span>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 w-full max-w-4xl">
+        <div class="card-glass p-5 rounded-2xl text-center">
+          <div class="text-2xl md:text-3xl font-bold text-purple-400 mb-1">9.900+</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-medium">Seguidores no Insta</div>
+        </div>
+        <div class="card-glass p-5 rounded-2xl text-center">
+          <div class="text-2xl md:text-3xl font-bold text-cyan-400 mb-1">02:00h</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-medium">Madrugada Adentro</div>
+        </div>
+        <div class="card-glass p-5 rounded-2xl text-center">
+          <div class="text-2xl md:text-3xl font-bold text-amber-400 mb-1">Grau Zero</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-medium">Bebidas Super Geladas</div>
+        </div>
+        <div class="card-glass p-5 rounded-2xl text-center">
+          <div class="text-2xl md:text-3xl font-bold text-emerald-400 mb-1">100%</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-medium">Variedade & Tabacaria</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Combo Builder Section (Motion / Utility) -->
+  <section id="combos" class="py-16 px-4 bg-zinc-950/60 border-y border-white/5 relative">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">Interativo</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-3">Monte Seu Combo da Resenha 🥃🧊</h2>
+        <p class="text-zinc-400 text-sm md:text-base mt-2">Escolha seus itens favoritos e gere o pedido pré-formatado no WhatsApp em 1 clique.</p>
+      </div>
+
+      <div class="card-glass p-6 md:p-8 rounded-3xl border border-purple-500/20 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Step 1: Destilado -->
+          <div>
+            <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-purple-600 text-white flex items-center justify-center text-[10px]">1</span>
+              Destilado Principal
+            </label>
+            <select id="combo-drink" class="w-full bg-zinc-900 border border-zinc-700 text-white rounded-xl p-3.5 text-sm focus:outline-none focus:border-purple-500 transition-colors">
+              <option value="Whisky Red Label (1L)">Whisky Johnnie Walker Red Label 1L</option>
+              <option value="Whisky Black Label (1L)">Whisky Johnnie Walker Black Label 1L</option>
+              <option value="Gin Tanqueray London Dry (750ml)">Gin Tanqueray London Dry</option>
+              <option value="Gin Tanqueray Royale (700ml)">Gin Tanqueray Royale (Frutas Vermelhas)</option>
+              <option value="Gin Rocks / Gordon's">Gin Gordon's / Rock's</option>
+              <option value="Vodka Absolut (1L)">Vodka Absolut 1L</option>
+              <option value="Vodka Smirnoff (998ml)">Vodka Smirnoff</option>
+              <option value="Whisky Jack Daniel's N° 7">Whisky Jack Daniel's Old No. 7</option>
+            </select>
+          </div>
+
+          <!-- Step 2: Energético -->
+          <div>
+            <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-purple-600 text-white flex items-center justify-center text-[10px]">2</span>
+              Mistura / Energético
+            </label>
+            <select id="combo-energy" class="w-full bg-zinc-900 border border-zinc-700 text-white rounded-xl p-3.5 text-sm focus:outline-none focus:border-purple-500 transition-colors">
+              <option value="4x Red Bull Tradicional">4x Red Bull Tradicional (250ml)</option>
+              <option value="4x Red Bull Sabores (Melancia / Tropical)">4x Red Bull Sabores (Tropical / Melancia)</option>
+              <option value="2x Monster Energy 473ml">2x Monster Energy Lata 473ml</option>
+              <option value="1x Refrigerante 2L (Coca-Cola / Guaraná)">1x Refrigerante 2 Litros</option>
+              <option value="4x Tônica / Citrus">4x Água Tônica / Schweppes Citrus</option>
+            </select>
+          </div>
+
+          <!-- Step 3: Gelo -->
+          <div>
+            <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-purple-600 text-white flex items-center justify-center text-[10px]">3</span>
+              Gelo de Sabor / Tradicional
+            </label>
+            <select id="combo-ice" class="w-full bg-zinc-900 border border-zinc-700 text-white rounded-xl p-3.5 text-sm focus:outline-none focus:border-purple-500 transition-colors">
+              <option value="1x Saco de Gelo de Coco Saborizado">1x Gelo de Coco Saborizado</option>
+              <option value="1x Gelo de Maracujá Tropical">1x Gelo de Maracujá</option>
+              <option value="1x Gelo de Melancia">1x Gelo de Melancia</option>
+              <option value="1x Pacote de Gelo Filtrado em Cubos 5kg">1x Saco de Gelo em Cubos 5kg</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Summary & Dynamic Button -->
+        <div class="mt-8 pt-6 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="text-left w-full md:w-auto">
+            <span class="text-xs text-zinc-500 uppercase font-semibold">Resumo do Pedido:</span>
+            <div id="combo-preview" class="text-sm font-medium text-purple-300 mt-0.5">
+              Whisky Red Label (1L) + 4x Red Bull Tradicional + 1x Saco de Gelo de Coco Saborizado
+            </div>
+          </div>
+
+          <button onclick="enviarComboWhatsApp()" class="w-full md:w-auto flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3 rounded-xl shadow-lg shadow-emerald-600/25 transition-all text-sm">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>Enviar Pedido no WhatsApp (63) 99993-8652</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias em Cards (Grid Moderno) -->
+  <section id="categorias" class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-semibold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">Variedade Absoluta</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-3">O Que Você Encontra na BOX 63</h2>
+      <p class="text-zinc-400 text-sm md:text-base mt-3">Tudo o que sua resenha ou final de semana precisa, sem precisar rodar pela cidade.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Cervejas -->
+      <div class="card-glass p-7 rounded-3xl flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-5">
+            <i data-lucide="beer" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Cervejas Trincando no Grau Zero</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            Heineken, Spaten, Corona Extra, Amstel, Budweiser, Stella Artois e as melhores puro malte geladas na temperatura certa.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-1.5">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Long Neck e Latão geladíssimos</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Caixas fechadas no atacado/varejo</li>
+          </ul>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Quero%20consultar%20as%20cervejas%20geladas%20dispon%C3%ADveis" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+          Pedir Cerveja Gelada <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Card 2: Tabacaria & Head Shop -->
+      <div class="card-glass p-7 rounded-3xl flex flex-col justify-between border-purple-500/30">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-5">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Tabacaria & Head Shop Premium</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            A mais completa linha de tabacaria do Setor Oeste: essências premium de narguilé (Nay, Zomo, Ziggy), carvões de coco, sedas, dichavadores e pods descartáveis.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-1.5">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Essências e Acessórios para Narguilé</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Variedade de sedas importadas e piteiras</li>
+          </ul>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Quero%20ver%20as%20ess%C3%AAncias%20e%20itens%20de%20tabacaria" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+          Consultar Tabacaria <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Card 3: Tereré & Gelo -->
+      <div class="card-glass p-7 rounded-3xl flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-5">
+            <i data-lucide="snowflake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Tereré Raiz, Gelo & Carvão</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            Para enfrentar o calor de Paraíso com estilo: ervas selecionadas de tereré, bombas de inox, copos térmicos, além de sacos de gelo filtrado e gelo saborizado.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-1.5">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Ervas mentoladas e puras selecionadas</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Gelos em cubos e gelos de sabores</li>
+          </ul>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Tem%20gelo%20e%20erva%20de%20terer%C3%A9%20dispon%C3%ADvel%3F" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+          Pedir Gelo / Tereré <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Feed Real do Instagram @box63distribuidora -->
+  <section id="feed" class="py-16 px-4 bg-zinc-950 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-purple-400">Comunidade Ativa</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1">Direto do Nosso Instagram (@box63distribuidora)</h2>
+          <p class="text-zinc-400 text-sm">Mais de 9.900 pessoas conectadas nas novidades e ofertas diárias.</p>
+        </div>
+        <a href="https://www.instagram.com/box63distribuidora/" target="_blank" class="inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 text-xs font-semibold px-4 py-2.5 rounded-xl border border-zinc-700 transition-colors">
+          <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
+          <span>Seguir @box63distribuidora</span>
+        </a>
+      </div>
+
+      <!-- Real Instagram Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_4_DduF23BJvvW.jpg" alt="Post Box 63 Whisky" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Tem oferta nele 🥃🧊
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_5_Dc4HRVcJiz2.jpg" alt="Post Box 63 Tanqueray" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Tanqueray Royale 🍇
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_6_DcyVzTvJmlV.jpg" alt="Post Box 63 Bebidas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Bebidas Geladas
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_7_DcyVxw_p3wh.jpg" alt="Post Box 63 Tabacaria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Tabacaria & Head Shop
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_8_DcyVvA8JL52.jpg" alt="Post Box 63 Novidades" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Combos Prontos
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-zinc-900">
+          <img src="assets/post_10_DcRgF3DJQN3.jpg" alt="Post Box 63 Loja Oeste" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
+            Loja Oeste 2059
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização, Endereço & Horários -->
+  <section id="localizacao" class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="card-glass p-8 md:p-12 rounded-3xl border border-white/10 relative overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Atendimento Presencial & Delivery</span>
+          <h2 class="text-3xl font-extrabold text-white mt-2 mb-4">Venha Visitar a BOX 63</h2>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            Localizada no Setor Oeste, com fácil acesso e atendimento rápido no balcão ou entrega expressa via motoboy.
+          </p>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-purple-400 mt-0.5 shrink-0"></i>
+              <div>
+                <span class="font-bold text-white block">Endereço:</span>
+                <span class="text-zinc-400">Rua Bernardino Maciel, nº 2059 — Setor Oeste</span>
+                <span class="text-zinc-500 block text-xs">Paraíso do Tocantins - TO</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0"></i>
+              <div>
+                <span class="font-bold text-white block">Horário de Funcionamento:</span>
+                <span class="text-zinc-400 block">• Segunda a Quinta: 08:30 às 00:40h</span>
+                <span class="text-zinc-400 block">• Sexta e Sábado: 08:30 às 02:00h (Madrugada)</span>
+                <span class="text-zinc-400 block">• Domingo: 08:30 às 23:30h</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-emerald-400 mt-0.5 shrink-0"></i>
+              <div>
+                <span class="font-bold text-white block">WhatsApp de Pedidos:</span>
+                <a href="https://api.whatsapp.com/send?phone=5563999938652" target="_blank" class="text-emerald-400 hover:underline font-semibold">(63) 99993-8652</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed / Rota -->
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 p-2 shadow-2xl">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.324838128509!2d-48.88902092523293!3d-10.178822009587425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b6642d99c430b%3A0x6b1076f2d5e21971!2sR.%20Bernardino%20Maciel%2C%202059%20-%20St.%20Oeste%2C%20Para%C3%ADso%20do%20Tocantins%20-%20TO%2C%2077600-000!5e0!3m2!1spt-BR!2sbr!4v1727537000000!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="320" 
+            style="border:0; border-radius: 12px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="text-center pt-2">
+            <a href="https://maps.google.com/?q=Rua+Bernardino+Maciel+2059+Paraiso+do+Tocantins" target="_blank" class="text-xs text-purple-400 hover:underline inline-flex items-center gap-1 font-medium">
+              Abrir rota no Google Maps <i data-lucide="external-link" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10 px-4 bg-[#09090b] text-zinc-500 text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.jpg" alt="BOX 63" class="w-7 h-7 rounded-full object-cover">
+        <span>© 2026 BOX 63 Distribuidora & Tabacaria ® • Daniel Hortega Mendes Mota Ltda • CNPJ 49.008.168/0001-32</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="proposta.html" class="text-purple-400 hover:text-purple-300 font-medium">Demonstração Exclusiva DLuz Digital • Marketing Digital em Paraíso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile WhatsApp CTA -->
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://api.whatsapp.com/send?phone=5563999938652&text=Opa%2C%20vi%20o%20site%20da%20Box%2063%20e%20gostaria%20de%20fazer%20um%20pedido%21" target="_blank" class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3 rounded-full shadow-2xl shadow-emerald-500/50 hover:scale-105 transition-all text-sm border border-emerald-400/30">
+      <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
+      <span class="hidden sm:inline">Pedir no WhatsApp</span>
+      <span class="sm:hidden">WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function updateComboPreview() {
+      const drink = document.getElementById('combo-drink').value;
+      const energy = document.getElementById('combo-energy').value;
+      const ice = document.getElementById('combo-ice').value;
+      document.getElementById('combo-preview').innerText = `${drink} + ${energy} + ${ice}`;
+    }
+
+    document.getElementById('combo-drink').addEventListener('change', updateComboPreview);
+    document.getElementById('combo-energy').addEventListener('change', updateComboPreview);
+    document.getElementById('combo-ice').addEventListener('change', updateComboPreview);
+
+    function enviarComboWhatsApp() {
+      const drink = document.getElementById('combo-drink').value;
+      const energy = document.getElementById('combo-energy').value;
+      const ice = document.getElementById('combo-ice').value;
+      const texto = `Opa, montei um combo no site da Box 63:\n🥃 *Destilado:* ${drink}\n⚡ *Mistura:* ${energy}\n🧊 *Gelo:* ${ice}\n\nQuanto fica para entrega / retirada no balcão?`;
+      const url = `https://api.whatsapp.com/send?phone=5563999938652&text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
